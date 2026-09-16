@@ -46,6 +46,31 @@
     font-weight: 600;
   }
 
+  .back-link {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--line);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    margin: 0.2rem 0 0.3rem;
+    display: block;
+  }
+
   h1 {
     font-family: Georgia, "Iowan Old Style", "Times New Roman", ui-serif, serif;
     font-size: clamp(2.1rem, 5vw, 2.9rem);
@@ -253,11 +278,14 @@
   }
 </style>
 
+<a class="back-link" href="index.html">&larr; Back</a>
+
 <div class="page">
 
   <header class="hero">
     <span class="kicker">BSIT · Business Informatics</span>
     <h1>Trixie Julia A. Santillan</h1>
+    <img class="avatar" src="images/santillan.jpg" alt="Trixie Julia A. Santillan">
     <p class="tagline">Fourth-year IT student who leads client-based and academic software projects and brings a structured, collaborative approach to shipping technology solutions.</p>
     <div class="contact-row">
       <a href="mailto:trixiejuliasn@gmail.com">trixiejuliasn@gmail.com</a>

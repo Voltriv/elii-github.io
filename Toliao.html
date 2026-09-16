@@ -37,6 +37,17 @@
     font-size: 2.2rem;
   }
 
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    margin: 0.9rem auto 1.1rem;
+    display: block;
+  }
+
   header p.role {
     color: var(--text);
     font-weight: 600;
@@ -192,13 +203,30 @@
     color: var(--muted);
     font-size: 0.85rem;
   }
+
+  .back-link {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
 
+<a class="back-link" href="index.html">&larr; Back</a>
+
 <header>
-  <span class="badge">Senior IT Student · Business Informatics</span>
+  <span class="badge">Senior IT Student ï¿½ Business Informatics</span>
   <h1>Toliao, Charles Mathew DG.</h1>
+  <img class="avatar" src="images/toliao.jpg" alt="Charles Mathew DG. Toliao">
   <p class="role">Business Analyst / Developer</p>
   <div class="contact-links">
     <a href="mailto:chde.toliao.up@phinmaed.com">Email</a>
@@ -273,7 +301,7 @@
 
     <div class="card">
       <h3>Arangkada Rent ? Vehicle Rental Platform</h3>
-      <div class="meta">Junior Final Project · 2025 · HTML, CSS, Node.js, Figma, Visual Studio Code, JavaScript</div>
+      <div class="meta">Junior Final Project ï¿½ 2025 ï¿½ HTML, CSS, Node.js, Figma, Visual Studio Code, JavaScript</div>
       <ul>
         <li>Built a web-based vehicle rental platform for fast, convenient online rentals.</li>
         <li>Enabled customers to browse vehicles, check availability, and reserve online.</li>
@@ -282,7 +310,7 @@
 
     <div class="card">
       <h3>LibTrack ? Library Management System</h3>
-      <div class="meta">Sophomore Final Project · 2025 · Kotlin, PHP, Android Studio, Figma, Visual Studio Code</div>
+      <div class="meta">Sophomore Final Project ï¿½ 2025 ï¿½ Kotlin, PHP, Android Studio, Figma, Visual Studio Code</div>
       <ul>
         <li>Built a dual-platform Library System with a web admin dashboard for librarians and a mobile app for students.</li>
         <li>Enabled book management, reservations, and real-time sync between platforms.</li>
@@ -291,7 +319,7 @@
 
     <div class="card">
       <h3>FloodWatch ? Flood Monitoring Mobile App</h3>
-      <div class="meta">Sophomore Final Project · 2024?2025 · Flutter, Laravel, MySQL, Python</div>
+      <div class="meta">Sophomore Final Project ï¿½ 2024?2025 ï¿½ Flutter, Laravel, MySQL, Python</div>
       <ul>
         <li>Developed a flood-monitoring mobile app providing real-time flood level updates for Dagupan City.</li>
         <li>Delivered safe alternate routes to help users navigate safely during floods.</li>
@@ -300,7 +328,7 @@
 
     <div class="card">
       <h3>AnonyNotes ? Anonymous Sharing Website</h3>
-      <div class="meta">Freshmen Final Project · 2024 · Canva, HTML, CSS, Visual Studio Code</div>
+      <div class="meta">Freshmen Final Project ï¿½ 2024 ï¿½ Canva, HTML, CSS, Visual Studio Code</div>
       <ul>
         <li>Built a lightweight, static website for individuals to anonymously share thoughts, ideas, and reflections.</li>
       </ul>
@@ -308,7 +336,7 @@
 
     <div class="card">
       <h3>Student Notes ? Academic Notes Organizer</h3>
-      <div class="meta">Freshmen Final Project · 2024 · Java</div>
+      <div class="meta">Freshmen Final Project ï¿½ 2024 ï¿½ Java</div>
       <ul>
         <li>Developed a user-friendly Java application to help students organize academic notes efficiently.</li>
         <li>Allowed students to create customized subjects or categories to structure their notes.</li>
@@ -317,7 +345,7 @@
 
     <div class="card">
       <h3>Bill Diary ? Personal Expense Tracker</h3>
-      <div class="meta">Freshmen Final Project · 2023?2024 · Python</div>
+      <div class="meta">Freshmen Final Project ï¿½ 2023?2024 ï¿½ Python</div>
       <ul>
         <li>Built a smart tracking application that simplifies personal finance management.</li>
         <li>Assisted users in tracking expenses and analyzing spending habits.</li>
@@ -341,7 +369,7 @@
       <h2>Education</h2>
       <div class="card">
         <h3>BS in Information Technology</h3>
-        <div class="meta">PHINMA ? University of Pangasinan · 2023 ? Present</div>
+        <div class="meta">PHINMA ? University of Pangasinan ï¿½ 2023 ? Present</div>
         <ul>
           <li>CITE Student Council Editor (2024 ? 2025)</li>
           <li>CITE Student Council Treasurer (2025 ? 2026)</li>
