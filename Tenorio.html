@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Gelmhar Tenorio ? BSIT Student</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --card: #ffffff;
+    --accent: #000000;
+    --accent-soft: #000000;
+    --text: #000000;
+    --muted: #555555;
+    --border: #000000;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  header {
+    text-align: center;
+    padding: 4rem 1.5rem 3rem;
+    background: var(--bg);
+    border-bottom: 2px solid var(--border);
+  }
+
+  header h1 {
+    margin: 0 0 0.25rem;
+    font-size: 2.2rem;
+  }
+
+  header p.role {
+    color: var(--text);
+    font-weight: 600;
+    margin: 0 0 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  header .badge {
+    display: inline-block;
+    background: #ffffff;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+  }
+
+  .contact-links a, .contact-links span {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--muted);
+  }
+
+  .contact-links a:hover {
+    color: var(--text);
+    border-color: var(--text);
+    border-bottom-style: solid;
+  }
+
+  main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  section {
+    margin-top: 3rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+    color: var(--text);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .summary {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-card {
+    background: var(--card);
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+
+  .skill-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: var(--text);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tag {
+    background: #ffffff;
+    color: var(--text);
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    font-size: 0.8rem;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1.3rem 1.5rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+  }
+
+  .card h3 {
+    margin: 0 0 0.2rem;
+    font-size: 1.1rem;
+  }
+
+  .card .meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .card ul li {
+    margin-bottom: 0.35rem;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+
+  @media (max-width: 650px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+
+  .competencies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .competencies .tag {
+    background: #ffffff;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge">BSIT Student · Business Informatics</span>
+  <h1>Tenorio, Christian Gelmhar</h1>
+  <p class="role">Aspiring Software Developer</p>
+  <div class="contact-links">
+    <a href="mailto:christian.gelmhar05@gmail.com">christian.gelmhar05@gmail.com</a>
+    <span>09922770838</span>
+    <span>Dagupan City, Pangasinan</span>
+    <a href="https://gelmharrr.github.io" target="_blank" rel="noopener">gelmharrr.github.io</a>
+  </div>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="summary">
+      Hi! I'm Christian, a BS Information Technology student majoring in Business Informatics at PHINMA ?
+      University of Pangasinan. Through a range of school projects I've taken on roles from Document Writer
+      to Project Manager, working across web, mobile, and desktop platforms with technologies like Python,
+      TypeScript, Node.js, React Native, Kotlin, Unity, and PHP. I enjoy building practical systems that solve
+      real problems, from emergency coordination platforms to e-commerce and registrar systems.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <div class="tags">
+          <span class="tag">HTML &amp; CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">PHP</span>
+          <span class="tag">Node.js</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Mobile Development</h3>
+        <div class="tags">
+          <span class="tag">React Native</span>
+          <span class="tag">Kotlin</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Java</span>
+          <span class="tag">C#</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Game Development</h3>
+        <div class="tags">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Other Technologies</h3>
+        <div class="tags">
+          <span class="tag">Blockchain</span>
+          <span class="tag">Java Swing</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Project Roles</h3>
+        <div class="tags">
+          <span class="tag">Document Writer</span>
+          <span class="tag">Project Manager</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>School Projects</h2>
+
+    <div class="card">
+      <h3>Lifeline (Capstone Project)</h3>
+      <div class="meta">Document Writer · December 2025 ? Present · Python, TypeScript, Node.js, React Native, Blockchain</div>
+      <ul>
+        <li>Developed a web and mobile system for emergency volunteer coordination as a capstone project.</li>
+        <li>Implemented real-time communication and task management features.</li>
+        <li>Ensured data security and transparency using blockchain technology.</li>
+        <li>Improved disaster response efficiency through system automation and coordination.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>ArtSpace</h3>
+      <div class="meta">Project Manager · August ? November 2024 · HTML, CSS, JavaScript, PHP</div>
+      <ul>
+        <li>Built a web platform for artists to showcase and manage digital portfolios.</li>
+        <li>Implemented content management features for uploading and organizing artwork.</li>
+        <li>Enhanced user engagement through interactive and responsive UI design.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>J-Mab</h3>
+      <div class="meta">Project Manager · December ? March 2024 · Kotlin, HTML, CSS, JavaScript, PHP</div>
+      <ul>
+        <li>Developed an e-commerce platform and mobile application for automotive products.</li>
+        <li>Integrated product browsing, ordering, and user interface functionalities.</li>
+        <li>Designed a rescue service feature for emergency tire-related situations.</li>
+        <li>Improved user experience through intuitive navigation and responsive design.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Zomville</h3>
+      <div class="meta">Document Writer · August ? November 2024 · Unity, C#, PHP</div>
+      <ul>
+        <li>Developed a 2D game using Unity and C# with interactive gameplay mechanics.</li>
+        <li>Implemented player controls, collision detection, and game logic systems.</li>
+        <li>Improved user engagement through responsive design and smooth gameplay.</li>
+        <li>Applied problem-solving and debugging techniques in game development.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Expense Tracker App</h3>
+      <div class="meta">Document Writer · December ? March 2024 · Java Swing</div>
+      <ul>
+        <li>Developed a desktop application to track and manage personal expenses.</li>
+        <li>Implemented data visualization (graphs/charts) to analyze spending patterns.</li>
+        <li>Designed expense categorization features to improve financial tracking.</li>
+        <li>Enhanced budgeting decisions through summarized financial insights.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>UPang Registrar System</h3>
+      <div class="meta">Document Writer · December ? March 2024 · HTML, CSS, JavaScript</div>
+      <ul>
+        <li>Built a responsive web-based registrar system for digital document access.</li>
+        <li>Reduced manual processing by enabling online submission and retrieval of requirements.</li>
+        <li>Implemented front-end features to enhance accessibility and user experience.</li>
+        <li>Organized student data for efficient document tracking and management.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="two-col">
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="card">
+        <ul>
+          <li>NC II - Computer Systems Servicing</li>
+          <li>Python Seminar for Freshmen</li>
+          <li>Code and Conquer: Mobile Edition Webinar</li>
+          <li>Transforming Data into Business Intelligence using MS Power BI Seminar</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <div class="meta">PHINMA ? University of Pangasinan · 2023 ? Present</div>
+        <ul>
+          <li>Major in Business Informatics</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <section id="competencies">
+    <h2>Core Competencies</h2>
+    <div class="competencies">
+      <span class="tag">Problem Solving</span>
+      <span class="tag">Teamwork &amp; Collaboration</span>
+      <span class="tag">Time Management</span>
+      <span class="tag">Adaptability</span>
+      <span class="tag">Debugging</span>
+      <span class="tag">Documentation</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Built with &amp; by Christian Gelmhar Tenorio
+</footer>
+
+</body>
+</html>
