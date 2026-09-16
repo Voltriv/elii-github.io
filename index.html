@@ -4,11 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f4f4f5;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #1a1a1a;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-button {
+            display: inline-block;
+            width: 220px;
+            text-align: center;
+            padding: 0.9rem 1.5rem;
+            background: #1a1a1a;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 999px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+        }
+
+        .nav-button:hover {
+            background: #333333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
 <body>
-    <a href="Vinluan.html"><button>Vinluan</button></a>
-    <a href="Tenorio.html"><button>Tenorio</button></a>
-    <a href="Toliao.html"><button>Toliao</button></a>
-    <a href="santillan.html"><button>Santillan</button></a>
+    <h1>Hello PO!</h1>
+    <div class="button-group">
+        <a class="nav-button" href="Vinluan.html">Vinluan</a>
+        <a class="nav-button" href="Tenorio.html">Tenorio</a>
+        <a class="nav-button" href="Toliao.html">Toliao</a>
+        <a class="nav-button" href="santillan.html">Santillan</a>
+    </div>
 </body>
 </html>
