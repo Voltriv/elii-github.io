@@ -1,0 +1,462 @@
+<title>Trixie Santillan</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --ink: #000000;
+    --muted: #444444;
+    --accent: #000000;
+    --accent-strong: #000000;
+    --accent-soft: #ffffff;
+    --line: #000000;
+    --shadow: rgba(0, 0, 0, 0);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  header.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 2.75rem;
+  }
+
+  .kicker {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", ui-serif, serif;
+    font-size: clamp(2.1rem, 5vw, 2.9rem);
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+
+  .tagline {
+    max-width: 58ch;
+    color: var(--muted);
+    font-size: 1.02rem;
+    margin: 0;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-row a, .contact-row span {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .contact-row a {
+    color: var(--accent-strong);
+    border-bottom: 1px solid transparent;
+  }
+
+  .contact-row a:hover, .contact-row a:focus-visible {
+    border-bottom-color: var(--accent-strong);
+  }
+
+  .dot {
+    color: var(--line);
+  }
+
+  section {
+    margin-bottom: 2.75rem;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .section-head .mark {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 2px;
+    background: var(--accent);
+    flex: none;
+  }
+
+  .section-head h2 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", ui-serif, serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  .summary {
+    font-size: 1.02rem;
+    color: var(--ink);
+    max-width: 65ch;
+  }
+
+  .entry {
+    padding: 1rem 1.1rem;
+    border-radius: 10px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    margin-bottom: 0.9rem;
+  }
+
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .entry-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+    color: var(--ink);
+  }
+
+  .entry-date {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .entry-role {
+    font-size: 0.88rem;
+    color: var(--accent-strong);
+    font-style: italic;
+    margin-top: 0.1rem;
+  }
+
+  .entry ul {
+    margin: 0.55rem 0 0;
+    padding-left: 1.15rem;
+    color: var(--muted);
+    font-size: 0.93rem;
+  }
+
+  .entry li + li {
+    margin-top: 0.35rem;
+  }
+
+  .edu-institution {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .edu-degree {
+    color: var(--muted);
+    font-size: 0.93rem;
+    margin-top: 0.15rem;
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+  }
+
+  .badge {
+    font-size: 0.78rem;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    line-height: 1.3;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.9rem;
+  }
+
+  .skill-group {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+  }
+
+  .skill-group h3 {
+    margin: 0 0 0.55rem;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tag {
+    font-size: 0.82rem;
+    padding: 0.22rem 0.55rem;
+    border-radius: 6px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    .page { padding: 2.75rem 1.15rem 4rem; }
+    .entry-row { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="hero">
+    <span class="kicker">BSIT · Business Informatics</span>
+    <h1>Trixie Julia A. Santillan</h1>
+    <p class="tagline">Fourth-year IT student who leads client-based and academic software projects and brings a structured, collaborative approach to shipping technology solutions.</p>
+    <div class="contact-row">
+      <a href="mailto:trixiejuliasn@gmail.com">trixiejuliasn@gmail.com</a>
+      <span class="dot">·</span>
+      <span>+63 905 310 5200</span>
+      <span class="dot">·</span>
+      <span>Pangasinan, PH</span>
+      <span class="dot">·</span>
+      <a href="#">LinkedIn</a>
+      <span class="dot">·</span>
+      <a href="#">Portfolio</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-head"><span class="mark"></span><h2>Summary</h2></div>
+    <p class="summary">Fourth-year BS Information Technology student majoring in Business Informatics with experience leading client-based and academic software development projects, and collaborating with cross-functional teams through student leadership roles. Brings a structured, collaborative, and execution-focused approach to delivering technology solutions.</p>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="mark"></span><h2>Education</h2></div>
+    <div class="entry">
+      <div class="entry-row">
+        <span class="edu-institution">PHINMA University of Pangasinan</span>
+        <span class="entry-date">2023 ? Present</span>
+      </div>
+      <div class="edu-degree">Bachelor of Science in Information Technology, Major in Business Informatics</div>
+      <div class="badges">
+        <span class="badge">CHED Merit Scholar · 2023?Present</span>
+        <span class="badge">Hawak Kamay Scholar · 2025?Present</span>
+        <span class="badge">CITE Student Council · 2024?2026</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="mark"></span><h2>Experience</h2></div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">College of Information Technology Education Student Council</span>
+        <span class="entry-date">Jun 2025 ? May 2026</span>
+      </div>
+      <div class="entry-role">Public Information Officer</div>
+      <ul>
+        <li>Led 7 college-wide events for 500+ students and directed the organization's official communications and publications across multiple platforms.</li>
+        <li>Recognized with the PHINMA Education Network Values Award ? Openness, for leadership and service.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">College of Information Technology Education Student Council</span>
+        <span class="entry-date">Jun 2024 ? May 2025</span>
+      </div>
+      <div class="entry-role">Student Outreach Community Officer</div>
+      <ul>
+        <li>Managed 3 community outreach initiatives and 2 department-wide events, coordinating volunteers, logistics, and external partners.</li>
+        <li>Earned the CITE Service Award for outstanding leadership and service.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="mark"></span><h2>Projects</h2></div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">FinStock ? Smart Inventory &amp; Sales Management System</span>
+        <span class="entry-date">Jan 2026</span>
+      </div>
+      <div class="entry-role">Project Manager</div>
+      <ul>
+        <li>Led a 5-member team, managing project scope, timelines, stakeholder communication, and software delivery for a client-based system built for David Home Finishing Center.</li>
+        <li>Presented the project at the CITE Tech Summit Exhibit 2026 and the 2nd INNOVEX 2026 International Student Conference.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">Business Process Analysis &amp; Automation Proposal ? Carnavi Android Pangasinan</span>
+        <span class="entry-date">Oct 2025</span>
+      </div>
+      <div class="entry-role">Business Analyst</div>
+      <ul>
+        <li>Analyzed sales, inventory, and customer management processes, delivering an automation proposal with business requirements, process improvements, and system mockups.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">DaguConnect</span>
+        <span class="entry-date">Jan 2025</span>
+      </div>
+      <div class="entry-role">System Analyst</div>
+      <ul>
+        <li>Elicited and analyzed stakeholder requirements, producing functional specifications and documentation that guided development of a web and mobile platform connecting tradespeople with local clients.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">Takbo: 2D Horror Game</span>
+        <span class="entry-date">Oct 2024</span>
+      </div>
+      <div class="entry-role">Frontend Developer</div>
+      <ul>
+        <li>Developed UI components and gameplay mechanics for a 2D immersive horror game.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-title">Byte Buddy</span>
+        <span class="entry-date">Jan 2024</span>
+      </div>
+      <div class="entry-role">Project Manager / Frontend Developer</div>
+      <ul>
+        <li>Coordinated project execution and developed frontend interfaces for a web-based technical support and appointment management platform.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="mark"></span><h2>Skills</h2></div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Project Management</h3>
+        <div class="skill-tags">
+          <span class="tag">Agile (Scrum)</span>
+          <span class="tag">Jira</span>
+          <span class="tag">Trello</span>
+          <span class="tag">Risk Management</span>
+          <span class="tag">Stakeholder Management</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Business Analysis</h3>
+        <div class="skill-tags">
+          <span class="tag">Requirements Elicitation</span>
+          <span class="tag">BPMN</span>
+          <span class="tag">Process Mapping</span>
+          <span class="tag">User Stories</span>
+          <span class="tag">Gap Analysis</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data Analysis</h3>
+        <div class="skill-tags">
+          <span class="tag">Excel</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>UI / UX Design</h3>
+        <div class="skill-tags">
+          <span class="tag">Figma</span>
+          <span class="tag">Wireframing</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">User Flow Design</span>
+          <span class="tag">Usability Testing</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Development</h3>
+        <div class="skill-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Git &amp; GitHub</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Professional</h3>
+        <div class="skill-tags">
+          <span class="tag">Problem Solving</span>
+          <span class="tag">Task Delegation</span>
+          <span class="tag">Cross-functional Collaboration</span>
+          <span class="tag">Analytical Thinking</span>
+          <span class="tag">Conflict Management</span>
+          <span class="tag">Time Management</span>
+          <span class="tag">Adaptability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Trixie Julia A. Santillan · Pangasinan, Philippines
+  </footer>
+
+</div>
