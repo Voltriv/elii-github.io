@@ -18,32 +18,37 @@
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
   }
 
   .page {
-    max-width: 760px;
+    max-width: 850px;
     margin: 0 auto;
-    padding: 4rem 1.5rem 6rem;
+    padding: 0 1.5rem 4rem;
   }
 
   header.hero {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 2.75rem;
+    gap: 0;
+    padding: 4rem 1.5rem 3rem;
+    background: var(--bg);
+    border-bottom: 2px solid var(--line);
+    margin: 0 -1.5rem;
   }
 
   .kicker {
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 600;
+    display: inline-block;
+    align-self: center;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
   }
 
   .back-link {
@@ -73,28 +78,24 @@
   }
 
   h1 {
-    font-family: Georgia, "Iowan Old Style", "Times New Roman", ui-serif, serif;
-    font-size: clamp(2.1rem, 5vw, 2.9rem);
-    font-weight: 600;
-    margin: 0;
-    letter-spacing: -0.01em;
-    text-wrap: balance;
+    font-size: 2.2rem;
+    margin: 0 0 0.25rem;
     color: var(--ink);
   }
 
   .tagline {
-    max-width: 58ch;
-    color: var(--muted);
-    font-size: 1.02rem;
-    margin: 0;
+    color: var(--ink);
+    font-weight: 600;
+    margin: 0 0 1rem;
+    letter-spacing: 0.5px;
   }
 
   .contact-row {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 0.5rem 1.1rem;
-    margin-top: 0.4rem;
-    font-size: 0.9rem;
+    gap: 1rem;
+    font-size: 0.95rem;
   }
 
   .contact-row a, .contact-row span {
@@ -116,44 +117,40 @@
   }
 
   section {
-    margin-bottom: 2.75rem;
+    margin-top: 3rem;
   }
 
   .section-head {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
+    display: block;
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 0.5rem;
     margin-bottom: 1.2rem;
   }
 
   .section-head .mark {
-    width: 0.55rem;
-    height: 0.55rem;
-    border-radius: 2px;
-    background: var(--accent);
-    flex: none;
+    display: none;
   }
 
   .section-head h2 {
-    font-family: Georgia, "Iowan Old Style", "Times New Roman", ui-serif, serif;
-    font-size: 1.15rem;
-    font-weight: 600;
+    font-size: 1.4rem;
     margin: 0;
-    letter-spacing: 0.01em;
   }
 
   .summary {
-    font-size: 1.02rem;
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--line);
     color: var(--ink);
-    max-width: 65ch;
   }
 
   .entry {
-    padding: 1rem 1.1rem;
-    border-radius: 10px;
+    padding: 1.3rem 1.5rem;
+    border-radius: 12px;
     background: var(--surface);
     border: 1px solid var(--line);
-    margin-bottom: 0.9rem;
+    border-left: 3px solid var(--accent);
+    margin-bottom: 1.2rem;
   }
 
   .entry:last-child { margin-bottom: 0; }
@@ -230,14 +227,14 @@
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0.9rem;
+    gap: 1rem;
   }
 
   .skill-group {
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 0.9rem 1rem;
+    padding: 1rem 1.2rem;
   }
 
   .skill-group h3 {
@@ -256,8 +253,8 @@
   }
 
   .tag {
-    font-size: 0.82rem;
-    padding: 0.22rem 0.55rem;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
     border-radius: 6px;
     background: var(--surface);
     border: 1px solid var(--line);
@@ -265,16 +262,15 @@
   }
 
   footer {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--line);
+    margin-top: 0;
+    padding: 2rem 1.5rem;
     color: var(--muted);
     font-size: 0.85rem;
     text-align: center;
   }
 
   @media (max-width: 480px) {
-    .page { padding: 2.75rem 1.15rem 4rem; }
+    .page { padding: 0 1.15rem 4rem; }
     .entry-row { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
   }
 </style>
